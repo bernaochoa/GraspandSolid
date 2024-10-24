@@ -4,7 +4,7 @@
 // </copyright>
 //-------------------------------------------------------------------------------
 
-namespace Full_GRASP_And_SOLID
+namespace Library
 {
     // Agregada por OCP
     public class WaitStep : BaseStep

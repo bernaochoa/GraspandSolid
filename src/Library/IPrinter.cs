@@ -1,8 +1,8 @@
 
-namespace Full_GRASP_And_SOLID
+namespace Library
 {
     public interface IPrinter
     {
-         void PrintRecipe(Recipe recipe);
+        void PrintRecipe(IPrintable printable); // Cambiar Recipe por IPrintable
     }
 }

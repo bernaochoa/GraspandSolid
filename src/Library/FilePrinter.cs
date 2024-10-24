@@ -1,12 +1,14 @@
 using System.IO;
 
-namespace Full_GRASP_And_SOLID
+namespace Library
 {
     public class FilePrinter : IPrinter
     {
-        public void PrintRecipe(Recipe recipe)
+        // Cambiar Recipe por IPrintable
+        public void PrintRecipe(IPrintable printable)
         {
-            File.WriteAllText("Recipe.txt", recipe.GetTextToPrint());
+            // Imprimir el texto usando el método de la interfaz
+            File.WriteAllText("Recipe.txt", printable.GetTextToPrint());
         }
     }
 }

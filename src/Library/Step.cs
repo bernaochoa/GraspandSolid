@@ -4,7 +4,7 @@
 // </copyright>
 //-------------------------------------------------------------------------------
 
-namespace Full_GRASP_And_SOLID
+namespace Library
 {
     // Modificada por OCP
     public class Step : BaseStep

@@ -1,12 +1,13 @@
 using System;
 
-namespace Full_GRASP_And_SOLID
+namespace Library
 {
     public class ConsolePrinter : IPrinter
     {
-        public void PrintRecipe(Recipe recipe)
+        // Ahora recibe un IPrintable en lugar de Recipe
+        public void PrintRecipe(IPrintable printable)
         {
-            Console.WriteLine(recipe.GetTextToPrint());
+            Console.WriteLine(printable.GetTextToPrint());
         }
     }
 }
